@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutor - Advanced</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Highlight.js Theme -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark-reasonable.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="glass-panel">
+            <!-- Header -->
+            <div class="chat-header">
+                <div class="bot-info">
+                    <div class="avatar-container">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="status-dot"></div>
+                    </div>
+                    <div>
+                        <h2>AI Tutor</h2>
+                        <span class="status-text">Always here to help</span>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button id="export-btn" class="icon-btn" title="Export Chat">
+                        <i class="fas fa-download"></i>
+                    </button>
+                    <button id="clear-btn" class="icon-btn" title="Clear Chat">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot welcome-message">
+                    <div class="avatar-small"><i class="fas fa-robot"></i></div>
+                    <div class="message-content">
+                        Hello! I'm your AI Tutor. 🎓<br>
+                        Ask me anything about your syllabus, or ask for "5 mark" or "15 mark" answers!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="chat-input-area">
+                <div class="input-wrapper">
+                    <button id="mic-btn" class="icon-btn-small" title="Voice Input">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <textarea id="user-input" placeholder="Ask a question..." rows="1"></textarea>
+                    <button id="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="footer-text">AI can make mistakes. Check important info.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
